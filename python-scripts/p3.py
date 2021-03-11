@@ -22,7 +22,7 @@ solvingResult = timeit.timeit(
 	number= 100000,
 	timer= time.perf_counter
 
-}
+)
 
 
 
@@ -33,7 +33,7 @@ flatteningResult = timeit.timeit(
         stmt= 'np.array(ys).flatten()',
         number= 100000,
         timer= time.perf_counter
-}
+)
 
 print(solvingResult)
 print(flatteningResult)
