@@ -18,8 +18,8 @@ solvingResult = timeit.timeit(
 
 	globals= globals(), 
 	setup= '''
-	y0 = 1.0
-	xs = np.linspace(0,5,100) ''',
+y0 = 1.0
+xs = np.linspace(0,5,100) ''',
 	stmt= 'ys = odeint(dy_dx,y0,xs) ',
 	number= 100000,
 	timer= time.perf_counter
